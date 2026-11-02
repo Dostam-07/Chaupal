@@ -1,0 +1,108 @@
+{
+ "id": "treehouse",
+ "elements": [
+  {
+   "type": "door",
+   "x": 0,
+   "y": 240,
+   "width": 300,
+   "height": 240,
+   "to": "default",
+   "toX": 950,
+   "toY": 2330
+  },
+  {
+   "type": "squirrel",
+   "x": 415,
+   "y": 550,
+   "rivX": 427,
+   "rivY": 501,
+   "riveWidth": 100,
+   "riveHeight": 150
+  },
+  {
+   "type": "door",
+   "x": 250,
+   "y": 500,
+   "width": 60,
+   "height": 60,
+   "to": "telescope"
+  },
+  {
+   "type": "book",
+   "x": 684,
+   "y": 179,
+   "size": 80
+  },
+  {
+   "type": "trapdoor",
+   "x": 455,
+   "y": 384,
+   "width": 130,
+   "height": 110,
+   "rivX": 542,
+   "rivY": 200,
+   "rivWidth": 415,
+   "rivHeight": 345,
+   "leverX": 333,
+   "leverY": 365,
+   "to": "default",
+   "toX": 1028,
+   "toY": 2054
+  },
+  {
+   "type": "spatialAudio",
+   "sounds": [
+    {
+     "x": 1592,
+     "y": 512,
+     "sound": "buzzing",
+     "radius": 200,
+     "falloff": 350,
+     "maxVolume": 0.5
+    }
+   ]
+  },
+  {
+   "type": "radio",
+   "x": 1119,
+   "y": 70,
+   "width": 405,
+   "height": 405,
+   "hitX": 980,
+   "hitY": 200,
+   "hitWidth": 200,
+   "hitHeight": 200
+  },
+  {
+   "type": "shock",
+   "x": 1577,
+   "y": 534,
+   "radius": 80,
+   "strength": 3000
+  },
+  {
+   "type": "riveObject",
+   "src": "flies.riv",
+   "x": 1600,
+   "y": 407,
+   "width": 360
+  },
+  {
+   "type": "ambientAudio",
+   "sounds": [
+    {
+     "sound": "treehouse",
+     "volume": 0.3
+    }
+   ]
+  },
+  {
+   "type": "hat",
+   "hatType": "explorer",
+   "x": 763,
+   "y": 633,
+   "size": 35
+  }
+ ]
+}

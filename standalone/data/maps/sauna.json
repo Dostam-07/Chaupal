@@ -1,0 +1,99 @@
+{
+ "id": "sauna",
+ "elements": [
+  {
+   "type": "door",
+   "x": 735,
+   "y": 805,
+   "width": 190,
+   "height": 270,
+   "to": "default",
+   "toX": 3830,
+   "toY": 2540
+  },
+  {
+   "type": "water",
+   "x": 475,
+   "y": 300,
+   "radius": 30
+  },
+  {
+   "type": "coal",
+   "x": 270,
+   "y": 670,
+   "radius": 105
+  },
+  {
+   "type": "hourglass",
+   "x": 520,
+   "y": 700,
+   "width": 115,
+   "clickSize": 140,
+   "clickOffsetY": 100
+  },
+  {
+   "type": "thermometer",
+   "x": 1035,
+   "y": 620
+  },
+  {
+   "type": "hat",
+   "hatType": "towel",
+   "x": 1550,
+   "y": 473,
+   "size": 80
+  },
+  {
+   "type": "riveObject",
+   "src": "woodburner.riv",
+   "x": 280,
+   "y": 310,
+   "width": 375
+  },
+  {
+   "type": "light",
+   "x": 1255,
+   "y": 740,
+   "width": 150
+  },
+  {
+   "type": "spatialAudio",
+   "sounds": [
+    {
+     "x": 1233,
+     "y": 807,
+     "sound": "buzz",
+     "radius": 100,
+     "falloff": 500,
+     "maxVolume": 0.4
+    },
+    {
+     "x": 327,
+     "y": 181,
+     "sound": "coal",
+     "radius": 300,
+     "falloff": 600,
+     "maxVolume": 0.7
+    }
+   ]
+  },
+  {
+   "type": "staticImage",
+   "src": "/optimized/objects/sauna-bucket.webp",
+   "x": 375,
+   "y": 210,
+   "width": 165,
+   "height": 153,
+   "zIndex": 1
+  },
+  {
+   "type": "ambientAudio",
+   "sounds": [
+    {
+     "sound": "sauna",
+     "volume": 0.3
+    }
+   ]
+  }
+ ]
+}

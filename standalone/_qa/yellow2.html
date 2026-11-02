@@ -1,0 +1,45 @@
+<!doctype html><meta charset="utf-8"><body><pre id="o"></pre>
+<script>
+(async () => {
+  const m = await fetch("/assets/maps/tiles/default/manifest.json").then(r => r.json());
+  const out = [];
+  const grab = (img) => {
+    const cv = document.createElement("canvas"); cv.width = img.naturalWidth; cv.height = img.naturalHeight;
+    const ctx = cv.getContext("2d", { willReadFrequently: true });
+    ctx.drawImage(img, 0, 0);
+    return ctx.getImageData(0, 0, cv.width, cv.height).data;
+  };
+  for (const layer of ["base", "top"]) {
+    for (const y of Object.keys(m.layers[layer])) {
+      for (const x of Object.keys(m.layers[layer][y])) {
+        const img = new Image();
+        await new Promise(res => { img.onload = res; img.onerror = res; img.src = "/assets/maps/tiles/default/" + layer + "_" + x + "_" + y + ".webp"; });
+        if (!img.naturalWidth) { out.push(layer + "_" + x + "_" + y + "|miss"); continue; }
+        const d = grab(img); const W = img.naturalWidth, H = img.naturalHeight;
+        let letter = 0;
+        for (let yy = 0; yy < H; yy++) {
+          for (let xx = 0; xx < W; xx++) {
+            const i = (yy * W + xx) * 4;
+            const r = d[i], g = d[i + 1], b = d[i + 2];
+            const isY = r > 170 && g > 120 && b < 140 && r > b && g > r * 0.55;
+            if (!isY) continue;
+            // look for a dark pixel within a 2px neighborhood
+            let hasDark = false;
+            outer: for (let dy = -2; dy <= 2 && !hasDark; dy++) for (let dx = -2; dx <= 2; dx++) {
+              const nx = xx + dx, ny = yy + dy;
+              if (nx < 0 || ny < 0 || nx >= W || ny >= H) continue;
+              const j = (ny * W + nx) * 4;
+              if (d[j] < 90 && d[j + 1] < 90 && d[j + 2] < 110) { hasDark = true; break outer; }
+            }
+            if (hasDark) letter++;
+          }
+        }
+        out.push(layer + "_" + x + "_" + y + "|" + (letter / (W * H)).toFixed(4));
+      }
+    }
+  }
+  out.sort((a, b) => parseFloat(b.split("|")[1] || 0) - parseFloat(a.split("|")[1] || 0));
+  document.getElementById("o").textContent = out.slice(0, 15).join("\n");
+  window.__res = out.slice(0, 15);
+})();
+</script></body></html>

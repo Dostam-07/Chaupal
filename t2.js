@@ -1,0 +1,20 @@
+const { chromium } = require("playwright-core");
+const CHROME = "C:/Program Files/Google/Chrome/Application/chrome.exe";
+(async () => {
+  const b = await chromium.launch({ executablePath: CHROME, headless: false, args: ["--window-size=1280,800"] });
+  const p = await b.newPage({ viewport: { width: 1280, height: 800 } });
+  const errs = []; p.on("pageerror", e => errs.push(e.message));
+  await p.goto("http://127.0.0.1:8901/", { waitUntil: "load" });
+  await p.waitForTimeout(1000); await p.click("#enter"); await p.waitForTimeout(900);
+  await p.evaluate(() => window.ccShells(40));
+  await p.click("#shop-btn"); await p.waitForTimeout(300);
+  await p.click(".shop-item >> nth=0"); await p.waitForTimeout(300);
+  await p.click(".shop-item >> nth=0"); await p.waitForTimeout(300);
+  const st = await p.evaluate(() => { const s = window.CCE.load(); return { hat: s.hat, glasses: s.glasses, hats: s.hats }; });
+  console.log("equip:", JSON.stringify(st));
+  await p.evaluate(() => document.getElementById("shop-close").click());
+  await p.waitForTimeout(400);
+  await p.screenshot({ path: "re/e2e-hat.png" });
+  console.log("errs", JSON.stringify(errs));
+  await b.close();
+})();

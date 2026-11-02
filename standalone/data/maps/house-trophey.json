@@ -1,0 +1,32 @@
+{
+ "id": "house-trophey",
+ "elements": [
+  {
+   "type": "door",
+   "x": 760,
+   "y": 715,
+   "width": 200,
+   "height": 300,
+   "to": "house-main",
+   "toX": 1620,
+   "toY": 330
+  },
+  {
+   "type": "clickArea",
+   "x": 400,
+   "y": 500,
+   "width": 80,
+   "height": 80,
+   "action": "tooltip:🏆|First Place — Awarded for winning the soccer tournament"
+  },
+  {
+   "type": "ambientAudio",
+   "sounds": [
+    {
+     "sound": "home",
+     "volume": 0.3
+    }
+   ]
+  }
+ ]
+}

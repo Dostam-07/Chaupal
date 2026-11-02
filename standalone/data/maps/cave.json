@@ -1,0 +1,61 @@
+{
+ "id": "cave",
+ "elements": [
+  {
+   "type": "bat",
+   "x": 710,
+   "y": 730,
+   "width": 200,
+   "height": 200
+  },
+  {
+   "type": "riveObject",
+   "src": "puddle.riv",
+   "x": 2155,
+   "y": 155,
+   "width": 1070
+  },
+  {
+   "type": "door",
+   "x": 80,
+   "y": 800,
+   "width": 250,
+   "height": 300,
+   "to": "default",
+   "toX": 780,
+   "toY": 1000,
+   "doorSound": "cave-enter"
+  },
+  {
+   "type": "door",
+   "x": 2800,
+   "y": 937,
+   "width": 250,
+   "height": 300,
+   "to": "default",
+   "toX": 3801,
+   "toY": 830,
+   "doorSound": "cave-enter"
+  },
+  {
+   "type": "hat",
+   "hatType": "miner",
+   "x": 894,
+   "y": 598,
+   "size": 70
+  },
+  {
+   "type": "ambientAudio",
+   "sounds": [
+    {
+     "sound": "cave",
+     "volume": 0.3
+    },
+    {
+     "sound": "eerie",
+     "volume": 0.15
+    }
+   ]
+  }
+ ]
+}

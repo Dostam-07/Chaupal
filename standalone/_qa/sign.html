@@ -1,0 +1,23 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#222"><canvas id="c"></canvas>
+<script>
+(async () => {
+  const X0 = 2000, Y0 = 1300, W = 740, H = 300;
+  const cv = document.getElementById("c"); cv.width = W; cv.height = H;
+  const ctx = cv.getContext("2d");
+  const parts = [
+    ["top_4_2", 2048, 1024, 0, 316, 512, 196],
+    ["top_5_2", 2560, 1024, 0, 316, 160, 196],
+    ["top_4_3", 2048, 1536, 0, 0, 512, 44],
+    ["top_5_3", 2560, 1536, 0, 0, 160, 44],
+  ];
+  let done = 0;
+  for (const [tile, ox, oy, sx, sy, sw, sh] of parts) {
+    const img = new Image();
+    img.onload = () => { ctx.drawImage(img, sx, sy, sw, sh, (sx + ox) - X0, (sy + oy) - Y0, sw, sh); if (++done === parts.length) document.title = "ready"; };
+    img.onerror = () => { if (++done === parts.length) document.title = "ready"; };
+    img.src = "/assets/maps/tiles/default/" + tile + ".webp";
+  }
+  // also expose which loaded
+  window.__loaded = [];
+})();
+</script></body></html>

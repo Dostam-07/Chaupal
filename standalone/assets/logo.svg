@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoTentL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F38D48"/>
+      <stop offset="100%" stop-color="#D46020"/>
+    </linearGradient>
+    <linearGradient id="logoTentR" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C2541C"/>
+      <stop offset="100%" stop-color="#9C3B0E"/>
+    </linearGradient>
+    <linearGradient id="logoFlame" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#E54B22"/>
+      <stop offset="80%" stop-color="#FFD43F"/>
+    </linearGradient>
+    <filter id="logoShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#3B2616" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Circular Badge Backdrop -->
+  <circle cx="60" cy="60" r="54" fill="#FFE8C4" stroke="#3E2717" stroke-width="4"/>
+  <circle cx="60" cy="60" r="48" fill="#FFF5E3" stroke="#F4B942" stroke-width="2" stroke-dasharray="4 2"/>
+
+  <!-- Tent -->
+  <g filter="url(#logoShadow)">
+    <polygon points="60,20 28,82 60,82" fill="url(#logoTentL)" stroke="#3E2717" stroke-width="3.5" stroke-linejoin="round"/>
+    <polygon points="60,20 92,82 60,82" fill="url(#logoTentR)" stroke="#3E2717" stroke-width="3.5" stroke-linejoin="round"/>
+    <!-- Open Flap -->
+    <polygon points="48,82 60,54 72,82" fill="#3D1D09" stroke="#3E2717" stroke-width="3" stroke-linejoin="round"/>
+    <circle cx="60" cy="70" r="4" fill="#FFE875"/>
+    <circle cx="60" cy="20" r="3.5" fill="#F4B942" stroke="#3E2717" stroke-width="2"/>
+  </g>
+
+  <!-- Campfire -->
+  <ellipse cx="60" cy="98" rx="14" ry="4" fill="#7D6653" stroke="#3E2717" stroke-width="1.5"/>
+  <path d="M52 98 L68 94" stroke="#523218" stroke-width="3" stroke-linecap="round"/>
+  <path d="M68 98 L52 94" stroke="#664020" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 84 C56 90 55 94 57 97 C59 99 61 99 63 97 C65 94 64 90 60 84 Z" fill="url(#logoFlame)"/>
+</svg>

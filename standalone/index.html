@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Explore Chaupal — standalone rebuild</title>
+<link rel="icon" type="image/png" href="assets/logo.png">
+<!-- Google Fonts with local/system rounded fallbacks -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- background canvases -->
+  <canvas id="world"></canvas>
+  <canvas id="overlay"></canvas>
+  <!-- rive canvases are injected here as absolutely-positioned layers -->
+  <div id="rive-layer" class="rive-layer"></div>
+
+  <!-- movie screen -->
+  <video id="movie" class="movie" playsinline muted></video>
+
+  <!-- modal backdrop overlay -->
+  <div id="modal-backdrop" class="modal-backdrop"></div>
+
+  <!-- in-game hud -->
+  <div id="hud" class="hud hidden">
+    <div class="hud-top">
+      <a class="brand" href="#" id="brand-btn" title="Explore Chaupal Camp">
+        <img src="assets/logo.svg" alt="Explore Chaupal">
+        <span class="wordmark">Explore Chaupal</span>
+        <span class="brand-status" title="Camp Active"></span>
+      </a>
+      <div class="hud-counts">
+        <button id="shells-btn" class="chip chip-shells" title="Shells collected">
+          <span class="chip-ico">🐚</span>
+          <span id="shells-count">0</span>
+          <span class="chip-total">/17</span>
+        </button>
+        <button id="badges-btn" class="chip chip-badges" title="Camp Merit Badges">
+          <span class="chip-ico">🎖️</span>
+          <span id="badges-count">0/9</span>
+        </button>
+        <button id="shop-btn" class="chip chip-shop amber" title="Camp Trading Post">
+          <span class="chip-ico">🛒</span>
+          <span>Shop</span>
+        </button>
+        <button id="audio-btn" class="chip chip-icon" title="Toggle Sound (M)">
+          <span id="audio-icon">🔊</span>
+        </button>
+        <button id="guide-btn" class="chip chip-icon" title="Camp Guide &amp; Controls (H)">
+          <span>📖</span>
+        </button>
+        <button id="pause-btn" class="chip chip-icon" title="Pause Game (Esc)">
+          <span>⏸️</span>
+        </button>
+      </div>
+    </div>
+    
+    <div id="toast" class="toast hidden"></div>
+    
+    <!-- Emote Quick Dock -->
+    <div id="emote-dock" class="emote-dock">
+      <div class="emote-dock-pills">
+        <button class="emote-btn" data-emote="1" title="Wave (Key 1)"><span class="e-icon">👋</span><span class="e-num">1</span></button>
+        <button class="emote-btn" data-emote="2" title="Ponder (Key 2)"><span class="e-icon">❓</span><span class="e-num">2</span></button>
+        <button class="emote-btn" data-emote="3" title="Love (Key 3)"><span class="e-icon">❤️</span><span class="e-num">3</span></button>
+        <button class="emote-btn" data-emote="4" title="Party (Key 4)"><span class="e-icon">🎉</span><span class="e-num">4</span></button>
+        <button class="emote-btn" data-emote="5" title="Sweat (Key 5)"><span class="e-icon">💦</span><span class="e-num">5</span></button>
+        <button class="emote-btn" data-emote="6" title="Zap (Key 6)"><span class="e-icon">⚡</span><span class="e-num">6</span></button>
+        <button class="emote-btn" data-emote="7" title="Sleep (Key 7)"><span class="e-icon">💤</span><span class="e-num">7</span></button>
+        <button class="emote-btn" data-emote="8" title="Groove (Key 8)"><span class="e-icon">🔥</span><span class="e-num">8</span></button>
+      </div>
+    </div>
+
+    <!-- Location Signpost -->
+    <div id="map-name" class="map-name">Camp Grounds</div>
+  </div>
+
+  <!-- welcome modal (compact pop-up card) -->
+  <div id="welcome" class="modal-window welcome-popup">
+    <!-- Hanging rustic wooden signboard -->
+    <div class="welcome-signboard">
+      <div class="sign-ropes">
+        <span class="sign-rope rope-left"></span>
+        <span class="sign-rope rope-right"></span>
+      </div>
+      <div class="sign-wood">
+        <span class="sign-bird" title="Welcome to Chaupal!">🐦</span>
+        <div class="sign-wood-inner">
+          <h1 class="sign-title">Explore Chaupal</h1>
+          <div class="sign-divider"></div>
+          <p class="sign-sub">Camp &bull; Standalone &bull; Offline</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="welcome-popup-body">
+      <p class="welcome-desc">Welcome to Explore Chaupal! Enjoy your stay.</p>
+      <p class="welcome-sub-tag">Your cozy learning &amp; creativity hub!</p>
+
+      <div class="welcome-pills">
+        <span class="pill-tag">⚡ Offline Ready</span>
+        <span class="pill-tag">💖 Built for Learners</span>
+        <span class="pill-tag">⭐ Open &amp; Friendly</span>
+      </div>
+
+      <div class="welcome-keys">
+        <span class="key-tag">Mouse Cursor</span> or <span class="key-tag">WASD</span> to walk &bull; <span class="key-tag">Click</span> to interact &bull; <span class="key-tag">Esc</span> to pause
+      </div>
+
+      <div class="welcome-btn-wrap">
+        <button id="enter" class="btn btn-enter-popup" title="Enter Explore Chaupal Camp">
+          <span class="enter-play-ico">▶</span>
+          <span>Enter Chaupal</span>
+        </button>
+      </div>
+
+      <div class="welcome-sound-row">
+        <button id="welcome-sound-btn" class="sound-toggle-link" type="button">
+          <span id="welcome-sound-icon">🔊</span> <span id="welcome-sound-text">Sound On (Press M to mute)</span>
+        </button>
+      </div>
+
+      <p class="hint">Standalone rebuild — assets &amp; art from the original site, no network needed.</p>
+    </div>
+  </div>
+
+  <!-- pause -->
+  <div id="pause" class="modal-window hidden">
+    <button class="modal-close-icon" id="pause-close" title="Close">✕</button>
+    <div class="modal-badge-header">
+      <span class="header-icon">🏕️</span>
+      <h2 class="modal-title">Campfire Pause</h2>
+    </div>
+    <p class="welcome-desc">Paused. Click resume to re-join.</p>
+    <div class="pause-actions">
+      <button id="resume" class="btn dark big">Resume</button>
+      <button id="pause-sound-btn" class="btn">Toggle Sound (M)</button>
+      <button id="pause-guide-btn" class="btn">Camp Guide (H)</button>
+      <button id="pause-reset-btn" class="btn subtle-danger">Reset Progress</button>
+    </div>
+  </div>
+
+  <!-- shop -->
+  <div id="shop" class="modal-window shop-modal hidden">
+    <button class="modal-close-icon" id="shop-x" title="Close (Esc)">✕</button>
+    <div class="modal-badge-header">
+      <span class="header-icon">⛺</span>
+      <h2 class="modal-title">Camp Trading Post</h2>
+    </div>
+    <div class="shop-balance-banner">
+      <span class="balance-ico">🐚</span>
+      <span class="balance-text"><span id="shop-shells">0</span> Seashells Available</span>
+    </div>
+    <div id="shop-items" class="shop-items"></div>
+    <div class="modal-foot">
+      <button id="shop-close" class="btn">Close</button>
+    </div>
+  </div>
+
+  <!-- badges -->
+  <div id="badges" class="modal-window badges-modal hidden">
+    <button class="modal-close-icon" id="badges-x" title="Close (Esc)">✕</button>
+    <div class="modal-badge-header">
+      <span class="header-icon">🎖️</span>
+      <h2 class="modal-title">Camp Badges</h2>
+    </div>
+    <div class="badge-progress-wrap">
+      <div class="badge-progress-info">
+        <span class="prog-label">Explorer Merit Progress</span>
+        <span id="badge-prog-count" class="prog-val">0 / 9</span>
+      </div>
+      <div class="badge-progress-track">
+        <div id="badge-progress-fill" class="badge-progress-fill" style="width: 0%"></div>
+      </div>
+    </div>
+    <div id="badges-grid" class="badges-grid"></div>
+    <div class="modal-foot">
+      <button id="badges-close" class="btn">Close</button>
+    </div>
+  </div>
+
+  <!-- shells -->
+  <div id="shells" class="modal-window shell-modal hidden">
+    <button class="modal-close-icon" id="shells-x" title="Close (Esc)">✕</button>
+    <div class="celebrate-burst">✨</div>
+    <div class="modal-badge-header">
+      <span class="header-icon pulse-scale">🐚</span>
+      <h2 class="modal-title">Shell discovered!</h2>
+    </div>
+    <p class="modal-sub" id="shells-msg"></p>
+    <div class="modal-foot">
+      <button id="shells-close" class="btn dark big">Nice</button>
+    </div>
+  </div>
+
+  <!-- badge unlock -->
+  <div id="badge-unlock" class="modal-window unlock-modal hidden">
+    <button class="modal-close-icon" id="badge-unlock-x" title="Close (Esc)">✕</button>
+    <div class="celebrate-burst">🎉</div>
+    <div class="modal-badge-header">
+      <span class="header-icon rotate-wobble">🎖️</span>
+      <h2 class="modal-title">Badge Complete: <span id="badge-unlock-name"></span></h2>
+    </div>
+    <p class="modal-sub" id="badge-unlock-desc"></p>
+    <div class="modal-foot">
+      <button id="badge-unlock-close" class="btn dark big">Nice</button>
+    </div>
+  </div>
+
+  <!-- camp guide & secrets modal -->
+  <div id="guide-modal" class="modal-window guide-modal hidden">
+    <button class="modal-close-icon" id="guide-close-x" title="Close (Esc)">✕</button>
+    <div class="modal-badge-header">
+      <span class="header-icon">📖</span>
+      <h2 class="modal-title">Camp Guide &amp; Controls</h2>
+    </div>
+    <div class="guide-scroll">
+      <div class="guide-section">
+        <h3>🕹️ Movement &amp; Controls</h3>
+        <ul class="guide-list">
+          <li><strong>Mouse Cursor</strong>: Move your mouse or cursor to guide your scout across camp (pointer lock supported, so the cursor really is your scout).</li>
+          <li><strong>WASD / Arrow Keys</strong>: Move around camp and swim in waters.</li>
+          <li><strong>Mouse Click / Tap</strong>: Interact with objects, doors, levers, and gadgets.</li>
+          <li><strong>Right Click / Keys 1 to 8</strong>: Express yourself with camp emotes (Wave, Ponder, Love, etc.).</li>
+          <li><strong>M Key</strong>: Mute / Unmute ambient camp sounds and music.</li>
+          <li><strong>Esc Key</strong>: Release cursor pointer lock or open pause menu.</li>
+        </ul>
+      </div>
+      <div class="guide-section">
+        <h3>🧭 Things to Discover</h3>
+        <ul class="guide-list">
+          <li><strong>17 Seashells</strong>: Hidden along shores, secret rooms, and caves. Collect them all to unlock the Beachcomber badge and shop for exclusive camp gear!</li>
+          <li><strong>Interactive Gadgets</strong>: Bonfires, waterslides, grand pianos, bells, merry-go-round, drums, cauldrons, and secret trapdoors.</li>
+          <li><strong>Outdoor Movie Screen</strong>: Check the outdoor theater screen for live premiering films!</li>
+          <li><strong>🌳 Village Chaupal</strong>: Follow the wayfinding signs east past the clubhouse to find a huge banyan tree — four village women sit beneath it and share their daily struggles around girls' education. Talk to them, explore the issues, share solutions, and see the impact they dream of.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-foot">
+      <button id="guide-close" class="btn">Got it!</button>
+    </div>
+  </div>
+
+  <!-- joystick (touch) -->
+  <div id="joystick" class="joystick hidden"><div class="joystick-thumb"></div></div>
+
+  <!-- scripts -->
+  <script src="vendor/howler.min.js"></script>
+  <script src="vendor/rive.js"></script>
+  <script src="data/config.js"></script>
+  <script src="data/embedded.js"></script>
+  <script src="js/util.js"></script>
+  <script src="js/assets.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/rive-glue.js"></script>
+  <script src="js/tiledmap.js"></script>
+  <script src="js/procfx.js"></script>
+  <script src="js/objects.js"></script>
+  <script src="js/campers.js"></script>
+  <script src="js/dialogue.js"></script>
+  <script src="js/village-art.js"></script>
+  <script src="js/village.js"></script>
+  <script src="js/village-school.js"></script>
+  <script src="js/village-ui.js"></script>
+  <script src="js/economy.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+{
+ "id": "school",
+ "elements": [
+  {
+   "type": "door",
+   "x": 860,
+   "y": 860,
+   "width": 200,
+   "height": 130,
+   "to": "default",
+   "toX": 6500,
+   "toY": 1750,
+   "doorSound": "wood-door"
+  },
+  {
+   "type": "seashell",
+   "x": 1380,
+   "y": 680
+  },
+  {
+   "type": "hat",
+   "hatType": "beret",
+   "x": 1420,
+   "y": 480,
+   "size": 40
+  },
+  {
+   "type": "chair",
+   "x": 480,
+   "y": 560,
+   "width": 90,
+   "height": 70
+  },
+  {
+   "type": "chair",
+   "x": 720,
+   "y": 560,
+   "width": 90,
+   "height": 70
+  },
+  {
+   "type": "chair",
+   "x": 960,
+   "y": 560,
+   "width": 90,
+   "height": 70
+  },
+  {
+   "type": "chair",
+   "x": 1200,
+   "y": 560,
+   "width": 90,
+   "height": 70
+  },
+  {
+   "type": "ambientAudio",
+   "sounds": [
+    {
+     "sound": "forest",
+     "volume": 0.15
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "id": "boat",
+ "elements": [
+  {
+   "type": "door",
+   "x": 0,
+   "y": 130,
+   "width": 2000,
+   "height": 130,
+   "to": "default",
+   "toX": 1690,
+   "toY": 3060
+  },
+  {
+   "type": "bell",
+   "x": 842,
+   "y": 500,
+   "rivX": 820,
+   "rivY": 416,
+   "rivWidth": 300,
+   "rivHeight": 300,
+   "hitSize": 60
+  },
+  {
+   "type": "riveObject",
+   "src": "fishing-rod.riv",
+   "x": 150,
+   "y": 305,
+   "width": 310,
+   "clickToPlay": true,
+   "clickX": 177,
+   "clickY": 508,
+   "clickSound": "fishing-line",
+   "clickSoundVolume": 0.5
+  },
+  {
+   "type": "hat",
+   "hatType": "sailor",
+   "x": 922,
+   "y": 508,
+   "size": 40
+  },
+  {
+   "type": "ambientAudio",
+   "sounds": [
+    {
+     "sound": "ocean-waves",
+     "volume": 0.3
+    },
+    {
+     "sound": "boat-rocking",
+     "volume": 0.1
+    }
+   ]
+  }
+ ]
+}

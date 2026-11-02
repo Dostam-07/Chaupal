@@ -1,0 +1,995 @@
+{
+ "id": "default",
+ "elements": [
+  {
+   "type": "staticImage",
+   "src": "/optimized/objects/party-hat-3.webp",
+   "x": 4220,
+   "y": 1500,
+   "width": 27,
+   "height": 44,
+   "layer": 0.5
+  },
+  {
+   "type": "staticImage",
+   "src": "/optimized/objects/party-hat-1.webp",
+   "x": 4254,
+   "y": 1500,
+   "width": 27,
+   "height": 44,
+   "layer": 0.5
+  },
+  {
+   "type": "staticImage",
+   "src": "/optimized/objects/party-hat-2.webp",
+   "x": 4594,
+   "y": 1366,
+   "width": 29,
+   "height": 47,
+   "layer": 0.5
+  },
+  {
+   "type": "river",
+   "width": 60,
+   "speed": 150,
+   "points": [
+    {
+     "x": 0,
+     "y": 2134
+    },
+    {
+     "x": 165,
+     "y": 2200
+    },
+    {
+     "x": 442,
+     "y": 2260
+    },
+    {
+     "x": 608,
+     "y": 2311
+    },
+    {
+     "x": 797,
+     "y": 2425
+    },
+    {
+     "x": 981,
+     "y": 2541
+    },
+    {
+     "x": 1193,
+     "y": 2559
+    },
+    {
+     "x": 1403,
+     "y": 2460
+    },
+    {
+     "x": 1254,
+     "y": 2365
+    },
+    {
+     "x": 1156,
+     "y": 2284
+    },
+    {
+     "x": 1346,
+     "y": 2171
+    },
+    {
+     "x": 1484,
+     "y": 2067,
+     "width": 100
+    },
+    {
+     "x": 1330,
+     "y": 1947,
+     "width": 80
+    },
+    {
+     "x": 1105,
+     "y": 1863,
+     "width": 80
+    },
+    {
+     "x": 908,
+     "y": 1699,
+     "width": 120
+    },
+    {
+     "x": 1175,
+     "y": 1439,
+     "width": 100
+    },
+    {
+     "x": 1629,
+     "y": 1310,
+     "width": 100,
+     "speed": 150
+    },
+    {
+     "x": 1932,
+     "y": 1186,
+     "width": 100,
+     "speed": 200
+    },
+    {
+     "x": 1636,
+     "y": 960,
+     "width": 110,
+     "speed": 500
+    },
+    {
+     "x": 1558,
+     "y": 595,
+     "width": 100,
+     "speed": 1000
+    }
+   ]
+  },
+  {
+   "type": "river",
+   "width": 120,
+   "speed": 300,
+   "points": [
+    {
+     "x": 4170,
+     "y": 865
+    },
+    {
+     "x": 4240,
+     "y": 750
+    }
+   ]
+  },
+  {
+   "type": "river",
+   "width": 120,
+   "speed": 300,
+   "points": [
+    {
+     "x": 4565,
+     "y": 950
+    },
+    {
+     "x": 4480,
+     "y": 870
+    },
+    {
+     "x": 4470,
+     "y": 731
+    }
+   ]
+  },
+  {
+   "type": "soccerBall",
+   "centerX": 5316,
+   "centerY": 1008,
+   "playArea": [
+    {
+     "x": 4590,
+     "y": 1073
+    },
+    {
+     "x": 5134,
+     "y": 1304
+    },
+    {
+     "x": 6027,
+     "y": 938
+    },
+    {
+     "x": 5495,
+     "y": 703
+    }
+   ],
+   "goalEdges": [
+    0,
+    2
+   ],
+   "goal1": [
+    {
+     "x": 4785,
+     "y": 1185
+    },
+    {
+     "x": 4900,
+     "y": 1235
+    },
+    {
+     "x": 4935,
+     "y": 1220
+    },
+    {
+     "x": 4810,
+     "y": 1170
+    }
+   ],
+   "goal2": [
+    {
+     "x": 5735,
+     "y": 785
+    },
+    {
+     "x": 5838,
+     "y": 830
+    },
+    {
+     "x": 5805,
+     "y": 850
+    },
+    {
+     "x": 5704,
+     "y": 800
+    }
+   ]
+  },
+  {
+   "type": "volleyball",
+   "x": 2870,
+   "y": 2590,
+   "corners": [
+    {
+     "x": 2870,
+     "y": 2455
+    },
+    {
+     "x": 2605,
+     "y": 2570
+    },
+    {
+     "x": 3130,
+     "y": 2795
+    },
+    {
+     "x": 3395,
+     "y": 2685
+    }
+   ],
+   "netHeight": 80
+  },
+  {
+   "type": "merryGoRound",
+   "x": 3914,
+   "y": 2099,
+   "width": 187,
+   "height": 80,
+   "centripetal": 30,
+   "sprite": {
+    "src": "/animations/merry-go-round.png",
+    "x": 3914,
+    "y": 2099,
+    "width": 300,
+    "height": 245
+   }
+  },
+  {
+   "type": "door",
+   "x": 3830,
+   "y": 2455,
+   "width": 80,
+   "height": 90,
+   "to": "sauna",
+   "toX": 830,
+   "toY": 600
+  },
+  {
+   "type": "door",
+   "x": 5270,
+   "y": 2860,
+   "width": 145,
+   "height": 100,
+   "toX": 350,
+   "toY": 480,
+   "to": "tent",
+   "doorSound": "gong"
+  },
+  {
+   "type": "door",
+   "x": 780,
+   "y": 890,
+   "width": 150,
+   "height": 160,
+   "to": "cave",
+   "toX": 250,
+   "toY": 780,
+   "doorSound": "cave-enter"
+  },
+  {
+   "type": "door",
+   "x": 3801,
+   "y": 740,
+   "width": 120,
+   "height": 100,
+   "to": "cave",
+   "toX": 2700,
+   "toY": 880,
+   "doorSound": "cave-enter"
+  },
+  {
+   "type": "door",
+   "x": 950,
+   "y": 2250,
+   "width": 80,
+   "height": 80,
+   "to": "treehouse",
+   "toX": 320,
+   "toY": 260,
+   "doorSound": "wood-door"
+  },
+  {
+   "type": "door",
+   "x": 2560,
+   "y": 2260,
+   "width": 55,
+   "height": 90,
+   "to": "house-main",
+   "toX": 770,
+   "toY": 420
+  },
+  {
+   "type": "door",
+   "x": 1690,
+   "y": 3130,
+   "toX": 1033,
+   "toY": 300,
+   "width": 170,
+   "height": 95,
+   "to": "boat"
+  },
+  {
+   "type": "door",
+   "x": 6580,
+   "y": 1620,
+   "toX": 860,
+   "toY": 700,
+   "width": 110,
+   "height": 110,
+   "to": "school",
+   "doorSound": "wood-door"
+  },
+  {
+   "type": "trigger",
+   "x": 6050,
+   "y": 2450,
+   "width": 130,
+   "height": 100,
+   "animation": "waterslide"
+  },
+  {
+   "type": "trigger",
+   "x": 4420,
+   "y": 540,
+   "width": 40,
+   "height": 40,
+   "animation": "cannonball"
+  },
+  {
+   "type": "seesaw",
+   "x1": 3405,
+   "y1": 2145,
+   "x2": 3615,
+   "y2": 2095,
+   "width": 70,
+   "spriteX": 3520,
+   "spriteY": 1900
+  },
+  {
+   "type": "tetherball",
+   "x": 3760,
+   "y": 2230,
+   "ropeLength": 200
+  },
+  {
+   "type": "watercan",
+   "x": 2530,
+   "y": 1577,
+   "centerX": 2148,
+   "centerY": 1608
+  },
+  {
+   "type": "plant",
+   "array": [
+    {
+     "x": 2110,
+     "y": 1532
+    },
+    {
+     "x": 2185,
+     "y": 1565
+    },
+    {
+     "x": 2260,
+     "y": 1595
+    },
+    {
+     "x": 2325,
+     "y": 1620
+    },
+    {
+     "x": 1931,
+     "y": 1594
+    },
+    {
+     "x": 2022,
+     "y": 1596
+    },
+    {
+     "x": 2094,
+     "y": 1658
+    },
+    {
+     "x": 2184,
+     "y": 1662
+    }
+   ]
+  },
+  {
+   "type": "seashell",
+   "array": [
+    {
+     "x": 120,
+     "y": 2339
+    },
+    {
+     "x": 627,
+     "y": 2773
+    },
+    {
+     "x": 524,
+     "y": 2919
+    },
+    {
+     "x": 666,
+     "y": 3026
+    },
+    {
+     "x": 1412,
+     "y": 2867
+    },
+    {
+     "x": 2030,
+     "y": 2615
+    },
+    {
+     "x": 3572,
+     "y": 2839
+    },
+    {
+     "x": 3802,
+     "y": 2760
+    },
+    {
+     "x": 4246,
+     "y": 2935
+    },
+    {
+     "x": 4890,
+     "y": 2689
+    },
+    {
+     "x": 5155,
+     "y": 2918
+    },
+    {
+     "x": 6225,
+     "y": 2990
+    },
+    {
+     "x": 6179,
+     "y": 2764
+    },
+    {
+     "x": 6397,
+     "y": 2670
+    },
+    {
+     "x": 1638,
+     "y": 2735
+    },
+    {
+     "x": 2737,
+     "y": 1810
+    },
+    {
+     "x": 4230,
+     "y": 2545
+    }
+   ]
+  },
+  {
+   "type": "marshmallow",
+   "x": 4920,
+   "y": 2846,
+   "campfireX": 4546,
+   "campfireY": 2790
+  },
+  {
+   "type": "riveObject",
+   "src": "campfire.riv",
+   "x": 4560,
+   "y": 2720,
+   "width": 170
+  },
+  {
+   "type": "orange",
+   "array": [
+    {
+     "x": 4898,
+     "y": 957
+    },
+    {
+     "x": 4925,
+     "y": 942
+    },
+    {
+     "x": 4958,
+     "y": 927
+    },
+    {
+     "x": 4995,
+     "y": 915
+    }
+   ]
+  },
+  {
+   "type": "gatorade",
+   "x": 4862,
+   "y": 1000,
+   "size": 100
+  },
+  {
+   "type": "floatie",
+   "x": 450,
+   "y": 2285,
+   "size": 65
+  },
+  {
+   "type": "pinkFloatie",
+   "x": 3337,
+   "y": 2858,
+   "size": 65
+  },
+  {
+   "type": "rocks",
+   "x": 3705,
+   "y": 1650,
+   "clickX": 3708,
+   "clickY": 1750,
+   "clickRadius": 30,
+   "width": 320
+  },
+  {
+   "type": "hat",
+   "hatType": "normal",
+   "x": 2718,
+   "y": 1172,
+   "size": 40
+  },
+  {
+   "type": "hat",
+   "hatType": "party-1",
+   "x": 4255,
+   "y": 1516,
+   "size": 20
+  },
+  {
+   "type": "hat",
+   "hatType": "party-3",
+   "x": 4223,
+   "y": 1514,
+   "size": 20
+  },
+  {
+   "type": "hat",
+   "hatType": "wavy",
+   "x": 4818,
+   "y": 696,
+   "size": 40
+  },
+  {
+   "type": "hat",
+   "slot": "glasses",
+   "hatType": "3d-glasses",
+   "x": 4959,
+   "y": 2427,
+   "size": 20
+  },
+  {
+   "type": "hat",
+   "slot": "glasses",
+   "hatType": "snorkel",
+   "x": 3901,
+   "y": 2825,
+   "size": 20
+  },
+  {
+   "type": "hat",
+   "hatType": "party-2",
+   "x": 4600,
+   "y": 1382,
+   "size": 30
+  },
+  {
+   "type": "hat",
+   "hatType": "cap",
+   "x": 2610,
+   "y": 926,
+   "size": 40
+  },
+  {
+   "type": "staticImage",
+   "src": "/bridges/bridge-1.png",
+   "x": 939,
+   "y": 1352,
+   "width": 430,
+   "height": 259,
+   "zIndex": 500
+  },
+  {
+   "type": "staticImage",
+   "src": "/bridges/bridge-2.png",
+   "x": 1470,
+   "y": 834,
+   "width": 400,
+   "height": 267,
+   "zIndex": 500
+  },
+  {
+   "type": "staticImage",
+   "src": "/bridges/bridge-3.png",
+   "x": 3125,
+   "y": 802,
+   "width": 312,
+   "height": 223,
+   "zIndex": 500
+  },
+  {
+   "type": "video",
+   "x": 5410,
+   "y": 2478,
+   "width": 189,
+   "height": 148,
+   "skewY": 23,
+   "titleX": 5244,
+   "titleY": 2338,
+   "titleRadius": 250,
+   "playlist": [
+    {
+     "src": "/movies/1.mp4",
+     "duration": 5781.93,
+     "title": "12 Angry Men"
+    },
+    {
+     "src": "/movies/2.mp4",
+     "duration": 1581.07,
+     "title": "Charlie Chaplin"
+    },
+    {
+     "src": "/movies/3.mp4",
+     "duration": 5459.52,
+     "title": "King Kong vs Godzilla"
+    },
+    {
+     "src": "/movies/4.mp4",
+     "duration": 5019.1,
+     "title": "Popeye"
+    },
+    {
+     "src": "/movies/5.mp4",
+     "duration": 1616.45,
+     "title": "Superman"
+    },
+    {
+     "src": "/movies/6.mp4",
+     "duration": 1771.58,
+     "title": "Looney Tunes"
+    }
+   ],
+   "audioX": 5410,
+   "audioY": 2478,
+   "audioRadius": 350,
+   "audioFalloff": 200,
+   "audioMaxVolume": 1
+  },
+  {
+   "type": "metalDetector",
+   "x": 1951,
+   "y": 2660
+  },
+  {
+   "type": "metal",
+   "x": 1635,
+   "y": 2660,
+   "item": "watch",
+   "img": "/optimized/objects/watch.webp",
+   "index": 0
+  },
+  {
+   "type": "metal",
+   "x": 2650,
+   "y": 2480,
+   "item": "wedding ring",
+   "img": "/optimized/objects/ring.webp",
+   "index": 1
+  },
+  {
+   "type": "metal",
+   "x": 840,
+   "y": 2730,
+   "item": "bottle cap",
+   "img": "/optimized/objects/bottle-cap.webp",
+   "index": 3
+  },
+  {
+   "type": "riveObject",
+   "src": "fountain.riv",
+   "x": 2360,
+   "y": 1115,
+   "width": 225
+  },
+  {
+   "type": "riveObject",
+   "src": "stage.riv",
+   "x": 4138,
+   "y": 1138,
+   "width": 1118
+  },
+  {
+   "type": "riveObject",
+   "src": "hottub.riv",
+   "x": 3840,
+   "y": 2468,
+   "width": 420
+  },
+  {
+   "type": "riveObject",
+   "src": "flags.riv",
+   "x": 5695,
+   "y": 1105,
+   "width": 500
+  },
+  {
+   "type": "riveObject",
+   "src": "lagoon.riv",
+   "x": 4305,
+   "y": 312,
+   "width": 935
+  },
+  {
+   "type": "clickArea",
+   "x": 1638,
+   "y": 1580,
+   "width": 130,
+   "height": 130,
+   "action": "shop"
+  },
+  {
+   "type": "chair",
+   "x": 3517,
+   "y": 2492,
+   "width": 50,
+   "height": 50,
+   "index": 1
+  },
+  {
+   "type": "chair",
+   "x": 3622,
+   "y": 2500,
+   "width": 45,
+   "height": 70
+  },
+  {
+   "type": "chair",
+   "x": 198,
+   "y": 2020,
+   "width": 45,
+   "height": 75
+  },
+  {
+   "type": "chair",
+   "x": 4848,
+   "y": 697,
+   "width": 100,
+   "height": 100
+  },
+  {
+   "type": "sunbathe",
+   "x": 3943,
+   "y": 2875,
+   "width": 185,
+   "height": 70
+  },
+  {
+   "type": "riveObject",
+   "src": "ocean.riv",
+   "x": 3375,
+   "y": 2649,
+   "width": 6750,
+   "speed": 0.7,
+   "behind": true,
+   "maxDpr": 1
+  },
+  {
+   "type": "riveObject",
+   "src": "river.riv",
+   "x": 1005,
+   "y": 295,
+   "width": 2100,
+   "behind": true,
+   "maxDpr": 1.2
+  },
+  {
+   "type": "riveObject",
+   "src": "windsock.riv",
+   "x": 3774,
+   "y": 3092,
+   "width": 120
+  },
+  {
+   "type": "spatialAudio",
+   "sounds": [
+    {
+     "x": 4528,
+     "y": 2776,
+     "sound": "campfire",
+     "radius": 250,
+     "falloff": 200,
+     "maxVolume": 0.55
+    },
+    {
+     "x": 3845,
+     "y": 2600,
+     "sound": "hot-tub",
+     "radius": 150,
+     "falloff": 150,
+     "maxVolume": 0.75
+    },
+    {
+     "x": 2349,
+     "y": 1189,
+     "sound": "fountain",
+     "radius": 100,
+     "falloff": 200,
+     "maxVolume": 1.5
+    },
+    {
+     "x": 1700,
+     "y": 900,
+     "sound": "waterfall",
+     "radius": 200,
+     "falloff": 750,
+     "maxVolume": 0.85
+    },
+    {
+     "x": 1129,
+     "y": 600,
+     "sound": "water-stream",
+     "radius": 150,
+     "falloff": 300,
+     "maxVolume": 0.7
+    },
+    {
+     "x": 1118,
+     "y": 1505,
+     "sound": "river",
+     "radius": 800,
+     "falloff": 400,
+     "maxVolume": 0.2
+    },
+    {
+     "x": 1399,
+     "y": 2069,
+     "sound": "river",
+     "radius": 400,
+     "falloff": 400,
+     "maxVolume": 0.2
+    },
+    {
+     "x": 900,
+     "y": 2450,
+     "sound": "river",
+     "radius": 300,
+     "falloff": 300,
+     "maxVolume": 0.2
+    },
+    {
+     "x": 1200,
+     "y": 1400,
+     "sound": "river",
+     "radius": 400,
+     "falloff": 400,
+     "maxVolume": 0.2
+    },
+    {
+     "x": 0,
+     "y": 2900,
+     "yLine": true,
+     "sound": "ocean-waves",
+     "radius": 200,
+     "falloff": 400,
+     "maxVolume": 0.35
+    },
+    {
+     "x": 5640,
+     "y": 1225,
+     "sound": "flags",
+     "radius": 200,
+     "falloff": 400,
+     "maxVolume": 0.75
+    },
+    {
+     "x": 4352,
+     "y": 780,
+     "sound": "small-waterfall",
+     "radius": 200,
+     "falloff": 400,
+     "maxVolume": 0.7
+    }
+   ]
+  },
+  {
+   "type": "concert",
+   "x": 4190,
+   "y": 1369,
+   "radius": 300,
+   "falloff": 400,
+   "maxVolume": 0.27
+  },
+  {
+   "type": "ambientAudio",
+   "sounds": [
+    {
+     "sound": "walking",
+     "volume": 0.12
+    },
+    {
+     "sound": "forest",
+     "volume": 0.17
+    }
+   ]
+  },
+  {
+   "type": "lapTracker",
+   "area": {
+    "x": 2300,
+    "y": 350,
+    "width": 1500,
+    "height": 870
+   },
+   "checkpoints": [
+    {
+     "x": 3260,
+     "y": 995,
+     "width": 110,
+     "height": 110
+    },
+    {
+     "x": 3478,
+     "y": 840,
+     "width": 100,
+     "height": 100
+    },
+    {
+     "x": 2899,
+     "y": 910,
+     "width": 120,
+     "height": 120
+    },
+    {
+     "x": 2420,
+     "y": 602,
+     "width": 160,
+     "height": 160
+    },
+    {
+     "x": 3100,
+     "y": 650,
+     "width": 130,
+     "height": 130
+    }
+   ]
+  }
+ ]
+}

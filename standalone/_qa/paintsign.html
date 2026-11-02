@@ -1,0 +1,84 @@
+<!doctype html><meta charset="utf-8"><body><script>
+// World-space welcome board: x 2758-3302, y 1840-2005 (where the original
+// the campground sign lives in the top layer of the map).
+// Tiles are 819x819 native but the engine draws each tile into a 512-world-px
+// box, so  world = tileOrigin + nativePx / 1.6  ->  nativePx = (world-origin)*1.6
+const WORLD = { x0: 2758, y0: 1840, x1: 3302, y1: 2005 };
+const XC = (WORLD.x0 + WORLD.x1) / 2;   // 3030 (text center x)
+const YC = (WORLD.y0 + WORLD.y1) / 2;   // 1922.5 (text center y)
+const S = 1.6;                          // native px per world px
+const TILE_W = 819;
+// top-layer tiles holding the original sign:
+const TILES = [
+  { name: "top_5_3", ox: 2560, oy: 1536 },
+  { name: "top_6_3", ox: 3072, oy: 1536 },
+];
+
+function localRect(t) {
+  const lx = Math.max((WORLD.x0 - t.ox) * S, 0);
+  const rx = Math.min((WORLD.x1 - t.ox) * S, TILE_W);
+  const ty = Math.max((WORLD.y0 - t.oy) * S, 0);
+  const by = Math.min((WORLD.y1 - t.oy) * S, TILE_W);
+  return { lx, rx, ty, by };
+}
+
+window.__paint = async function () {
+  const out = {};
+  for (const t of TILES) {
+    const img = new Image();
+    await new Promise(res => { img.onload = res; img.onerror = res; img.src = "/assets/maps/tiles/default/" + t.name + ".webp"; });
+    const cv = document.createElement("canvas");
+    cv.width = img.naturalWidth || TILE_W; cv.height = img.naturalHeight || TILE_W;
+    const ctx = cv.getContext("2d");
+    ctx.drawImage(img, 0, 0);
+    const R = localRect(t);
+    const r = 42;                                   // corner radius (= 26 * 1.6)
+    const outerTL = R.lx > 0;                       // board's left edge starts here
+    const outerTR = R.rx < cv.width;                // board's right edge ends here
+    const radius = (rl, rr) =>
+      `M ${R.lx + (rl ? r : 0)} ${R.ty} ` +
+      `H ${R.rx - (rr ? r : 0)} ` +
+      `Q ${R.rx} ${R.ty} ${R.rx} ${R.ty + (rr ? r : 0)} ` +
+      `V ${R.by - (rr ? r : 0)} ` +
+      `Q ${R.rx} ${R.by} ${R.rx - (rr ? r : 0)} ${R.by} ` +
+      `H ${R.lx + (rl ? r : 0)} ` +
+      `Q ${R.lx} ${R.by} ${R.lx} ${R.by - (rl ? r : 0)} ` +
+      `V ${R.ty + (rl ? r : 0)} ` +
+      `Q ${R.lx} ${R.ty} ${R.lx + (rl ? r : 0)} ${R.ty} Z`;
+    // board: rounded plank (nice corners at outer edges, square at the tile seam)
+    ctx.beginPath();
+    ctx.lineJoin = "round";
+    ctx.path = undefined;
+    ctx.moveTo(R.lx + (outerTL ? r : 0), R.ty);
+    ctx.lineTo(R.rx - (outerTR ? r : 0), R.ty);
+    if (outerTR) ctx.quadraticCurveTo(R.rx, R.ty, R.rx, R.ty + r);
+    ctx.lineTo(R.rx, R.by - (outerTR ? r : 0));
+    if (outerTR) ctx.quadraticCurveTo(R.rx, R.by, R.rx - r, R.by);
+    ctx.lineTo(R.lx + (outerTL ? r : 0), R.by);
+    if (outerTL) ctx.quadraticCurveTo(R.lx, R.by, R.lx, R.by - r);
+    ctx.lineTo(R.lx, R.ty + (outerTL ? r : 0));
+    if (outerTL) ctx.quadraticCurveTo(R.lx, R.ty, R.lx + r, R.ty);
+    ctx.closePath();
+    ctx.fillStyle = "#a9743f"; ctx.fill();
+    ctx.lineWidth = 13; ctx.strokeStyle = "#4a3728"; ctx.stroke();
+    // plank seams (3 horizontal lines)
+    ctx.lineWidth = 5; ctx.strokeStyle = "rgba(74,55,40,0.35)";
+    for (let k = 1; k <= 3; k++) {
+      const yy = R.ty + ((R.by - R.ty) * k) / 4;
+      ctx.beginPath(); ctx.moveTo(R.lx + 30, yy); ctx.lineTo(R.rx - 30, yy); ctx.stroke();
+    }
+    // letters: "Explore Chaupal" centered on the board (may span the tile seam)
+    const cx = (XC - t.ox) * S;
+    const cy = (YC - t.oy) * S;
+    ctx.save();
+    ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.font = "800 93px 'Arial Rounded MT Bold', 'Trebuchet MS', 'Segoe UI', Arial, sans-serif";
+    ctx.lineJoin = "round";
+    ctx.lineWidth = 16; ctx.strokeStyle = "#4a3728"; ctx.strokeText("Explore Chaupal", cx, cy);
+    ctx.fillStyle = "#ffd166"; ctx.fillText("Explore Chaupal", cx, cy);
+    ctx.restore();
+    out[t.name] = cv.toDataURL("image/webp", 0.92);
+  }
+  return out;
+};
+</script></body></html>

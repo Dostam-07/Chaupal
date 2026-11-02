@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="skyGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFEED1" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#FEDCB0" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#FCD29D" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="tentLeft" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F38D48"/>
+      <stop offset="100%" stop-color="#D46020"/>
+    </linearGradient>
+    <linearGradient id="tentRight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#C2541C"/>
+      <stop offset="100%" stop-color="#9C3B0E"/>
+    </linearGradient>
+    <linearGradient id="tentInner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#542B12"/>
+      <stop offset="100%" stop-color="#2D1507"/>
+    </linearGradient>
+    <linearGradient id="lampGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFE875" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F7A128" stop-opacity="0.1"/>
+    </linearGradient>
+    <linearGradient id="flameGrad1" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0%" stop-color="#E54B22"/>
+      <stop offset="70%" stop-color="#FA8C23"/>
+      <stop offset="100%" stop-color="#FFD43F"/>
+    </linearGradient>
+    <linearGradient id="ribbonGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#734B2B"/>
+      <stop offset="50%" stop-color="#8C5C36"/>
+      <stop offset="100%" stop-color="#734B2B"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="shadowUnder" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#3B2616" flood-opacity="0.25"/>
+    </filter>
+
+    <style>
+      .brand-title {
+        font-family: 'Fredoka', 'Quicksand', 'Arial Rounded MT Bold', 'Trebuchet MS', system-ui, sans-serif;
+        font-weight: 700;
+        font-size: 54px;
+        fill: #FFFFFF;
+        stroke: #3E2717;
+        stroke-width: 7;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+        paint-order: stroke fill;
+        letter-spacing: 1px;
+      }
+      .brand-title-shadow {
+        font-family: 'Fredoka', 'Quicksand', 'Arial Rounded MT Bold', 'Trebuchet MS', system-ui, sans-serif;
+        font-weight: 700;
+        font-size: 54px;
+        fill: #27170B;
+        letter-spacing: 1px;
+      }
+      .ribbon-text {
+        font-family: 'Fredoka', 'Quicksand', 'Arial Rounded MT Bold', 'Trebuchet MS', system-ui, sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        fill: #FFF3DB;
+        letter-spacing: 4px;
+      }
+    </style>
+  </defs>
+
+  <!-- Ambient Backdrop Aura -->
+  <ellipse cx="300" cy="140" rx="220" ry="110" fill="url(#skyGlow)"/>
+
+  <!-- Background Pine Trees -->
+  <g opacity="0.85">
+    <!-- Left tree small -->
+    <polygon points="175,152 160,185 190,185" fill="#294F3C"/>
+    <polygon points="175,138 163,165 187,165" fill="#325F49"/>
+    <polygon points="175,124 167,148 183,148" fill="#3C7358"/>
+
+    <!-- Left tree medium -->
+    <polygon points="210,158 190,195 230,195" fill="#1E3E2E"/>
+    <polygon points="210,138 194,172 226,172" fill="#294F3C"/>
+    <polygon points="210,120 199,150 221,150" fill="#35654D"/>
+
+    <!-- Right tree medium -->
+    <polygon points="390,158 370,195 410,195" fill="#1E3E2E"/>
+    <polygon points="390,138 374,172 406,172" fill="#294F3C"/>
+    <polygon points="390,120 379,150 401,150" fill="#35654D"/>
+
+    <!-- Right tree small -->
+    <polygon points="425,152 410,185 440,185" fill="#294F3C"/>
+    <polygon points="425,138 413,165 437,165" fill="#325F49"/>
+    <polygon points="425,124 417,148 433,148" fill="#3C7358"/>
+  </g>
+
+  <!-- Ground Mound Shadow -->
+  <ellipse cx="300" cy="198" rx="145" ry="18" fill="#382414" opacity="0.2"/>
+
+  <!-- Camp Tent Structure -->
+  <g id="camp-tent" filter="url(#shadowUnder)">
+    <!-- Guy lines -->
+    <line x1="300" y1="46" x2="204" y2="192" stroke="#3E2717" stroke-width="2.5" stroke-dasharray="4 2" opacity="0.65"/>
+    <line x1="300" y1="46" x2="396" y2="192" stroke="#3E2717" stroke-width="2.5" stroke-dasharray="4 2" opacity="0.65"/>
+
+    <!-- Wooden ridge pole tip -->
+    <circle cx="300" cy="46" r="6" fill="#F4B942" stroke="#3E2717" stroke-width="3"/>
+
+    <!-- Tent Canvas Left Wall (Sunlit) -->
+    <polygon points="300,48 214,188 300,188" fill="url(#tentLeft)" stroke="#3E2717" stroke-width="5" stroke-linejoin="round"/>
+
+    <!-- Tent Canvas Right Wall (Shaded) -->
+    <polygon points="300,48 386,188 300,188" fill="url(#tentRight)" stroke="#3E2717" stroke-width="5" stroke-linejoin="round"/>
+
+    <!-- Tent Ridge Seam -->
+    <line x1="300" y1="48" x2="300" y2="188" stroke="#3E2717" stroke-width="3" opacity="0.6"/>
+
+    <!-- Tent Canvas Highlights -->
+    <polygon points="300,64 246,176 300,176" fill="#FFE2C2" opacity="0.22"/>
+
+    <!-- Tent Open Flap (Interior Door) -->
+    <polygon points="266,188 300,118 334,188" fill="url(#tentInner)" stroke="#3E2717" stroke-width="4.5" stroke-linejoin="round"/>
+
+    <!-- Warm Lantern Glow from Inside Tent -->
+    <polygon points="274,188 300,132 326,188" fill="url(#lampGlow)"/>
+    <circle cx="300" cy="154" r="7" fill="#FFF2A3" filter="url(#softGlow)"/>
+
+    <!-- Guy line pegs -->
+    <polygon points="202,189 206,197 200,197" fill="#8C5C36" stroke="#3E2717" stroke-width="1.5"/>
+    <polygon points="398,189 402,197 396,197" fill="#8C5C36" stroke="#3E2717" stroke-width="1.5"/>
+  </g>
+
+  <!-- Campfire in Foreground -->
+  <g id="campfire">
+    <!-- Fire stones ring -->
+    <ellipse cx="282" cy="198" rx="8" ry="4" fill="#695646" stroke="#3E2717" stroke-width="1.5"/>
+    <ellipse cx="294" cy="201" rx="8" ry="4.5" fill="#7D6653" stroke="#3E2717" stroke-width="1.5"/>
+    <ellipse cx="306" cy="201" rx="8" ry="4.5" fill="#695646" stroke="#3E2717" stroke-width="1.5"/>
+    <ellipse cx="318" cy="198" rx="8" ry="4" fill="#7D6653" stroke="#3E2717" stroke-width="1.5"/>
+
+    <!-- Wooden fire logs -->
+    <path d="M285 200 L315 192" stroke="#523218" stroke-width="5" stroke-linecap="round"/>
+    <path d="M315 200 L285 192" stroke="#664020" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Flame outer -->
+    <path d="M300 174 C292 184 290 190 294 195 C298 199 302 199 306 195 C310 190 308 184 300 174 Z" fill="url(#flameGrad1)"/>
+    <!-- Flame inner core -->
+    <path d="M300 181 C295 188 295 191 297 194 C299 196 301 196 303 194 C305 191 305 188 300 181 Z" fill="#FFF494"/>
+
+    <!-- Floating Sparks/Embers -->
+    <circle cx="295" cy="168" r="1.5" fill="#FFC936"/>
+    <circle cx="305" cy="164" r="1.2" fill="#FFA526"/>
+    <circle cx="301" cy="158" r="1.5" fill="#FFEAA3"/>
+  </g>
+
+  <!-- Scout Twinkle Stars -->
+  <g fill="#F4B942" stroke="#3E2717" stroke-width="1.2">
+    <!-- Left Star -->
+    <path d="M142 86 Q142 94 150 94 Q142 94 142 102 Q142 94 134 94 Q142 94 142 86 Z"/>
+    <circle cx="168" cy="72" r="2.5" fill="#F4B942" stroke="#3E2717" stroke-width="1"/>
+    <!-- Right Star -->
+    <path d="M458 86 Q458 94 466 94 Q458 94 458 102 Q458 94 450 94 Q458 94 458 86 Z"/>
+    <circle cx="432" cy="72" r="2.5" fill="#F4B942" stroke="#3E2717" stroke-width="1"/>
+  </g>
+
+  <!-- Typography: Brand Name -->
+  <!-- Subtle 3D shadow layer -->
+  <text class="brand-title-shadow" x="300" y="262" text-anchor="middle">Explore Chaupal</text>
+  <!-- Foreground Crisp Text with Outline -->
+  <text class="brand-title" x="300" y="258" text-anchor="middle">Explore Chaupal</text>
+
+  <!-- Scout Banner Ribbon -->
+  <g id="ribbon" filter="url(#shadowUnder)">
+    <!-- Ribbon tails -->
+    <polygon points="120,300 145,286 145,314" fill="#543319" stroke="#3E2717" stroke-width="2.5"/>
+    <polygon points="480,300 455,286 455,314" fill="#543319" stroke="#3E2717" stroke-width="2.5"/>
+
+    <!-- Ribbon center badge plate -->
+    <rect x="135" y="284" width="330" height="32" rx="16" fill="url(#ribbonGrad)" stroke="#3E2717" stroke-width="3"/>
+    <!-- Inner gold decorative line -->
+    <rect x="138" y="287" width="324" height="26" rx="13" fill="none" stroke="#F4B942" stroke-width="1.5" stroke-dasharray="6 3" opacity="0.8"/>
+
+    <!-- Ribbon Subtitle -->
+    <text class="ribbon-text" x="300" y="305" text-anchor="middle">★ CAMP · STANDALONE · OFFLINE ★</text>
+  </g>
+</svg>

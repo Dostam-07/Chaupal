@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><body style="margin:0;background:#333"><canvas id="c" width="1040" height="264"></canvas>
+<script>
+(async () => {
+  const cv = document.getElementById("c"); const ctx = cv.getContext("2d");
+  const names = ["base_4_2", "base_5_2", "base_4_3", "base_5_3"];
+  let done = 0;
+  names.forEach((n, i) => {
+    const img = new Image();
+    img.onload = () => { const x = (i % 2) * 520, y = Math.floor(i / 2) * 132; ctx.drawImage(img, x, y, 520, 132); if (++done === names.length) document.title = "ready"; };
+    img.onerror = () => { if (++done === names.length) document.title = "ready"; };
+    img.src = "/assets/maps/tiles/default/" + n + ".webp";
+  });
+})();
+</script></body></html>

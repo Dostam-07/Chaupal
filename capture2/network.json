@@ -1,0 +1,1162 @@
+[
+ {
+  "url": "https://neal.fun/cursor-camp/",
+  "status": 200,
+  "type": "document",
+  "size": 22198
+ },
+ {
+  "url": "https://neal.fun/_nuxt/static/1793291102/manifest.js",
+  "status": 200,
+  "type": "script",
+  "size": 6446
+ },
+ {
+  "url": "https://neal.fun/_nuxt/3227de5.js",
+  "status": 200,
+  "type": "script",
+  "size": 23511
+ },
+ {
+  "url": "https://neal.fun/_nuxt/f71d513.js",
+  "status": 200,
+  "type": "script",
+  "size": 5151
+ },
+ {
+  "url": "https://neal.fun/_nuxt/633b8ab.js",
+  "status": 200,
+  "type": "script",
+  "size": 20709
+ },
+ {
+  "url": "https://neal.fun/_nuxt/09c837c.js",
+  "status": 200,
+  "type": "script",
+  "size": 20007
+ },
+ {
+  "url": "https://neal.fun/_nuxt/260fd67.js",
+  "status": 200,
+  "type": "script",
+  "size": 14780
+ },
+ {
+  "url": "https://neal.fun/_nuxt/static/1793291102/cursor-camp/state.js",
+  "status": 200,
+  "type": "script",
+  "size": 10830
+ },
+ {
+  "url": "https://neal.fun/_nuxt/fa2ef5f.js",
+  "status": 200,
+  "type": "script",
+  "size": 73065
+ },
+ {
+  "url": "https://neal.fun/_nuxt/aee4547.js",
+  "status": 200,
+  "type": "script",
+  "size": 36422
+ },
+ {
+  "url": "https://neal.fun/_nuxt/static/1793291102/cursor-camp/payload.js",
+  "status": 200,
+  "type": "script",
+  "size": 423
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/logo.svg",
+  "status": 200,
+  "type": "image",
+  "size": 5686
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/logo.png",
+  "status": 200,
+  "type": "image",
+  "size": 60764
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/wheel/1.webp",
+  "status": 200,
+  "type": "image",
+  "size": 10796
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/wheel/3.webp",
+  "status": 200,
+  "type": "image",
+  "size": 8622
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/wheel/5.webp",
+  "status": 200,
+  "type": "image",
+  "size": 5762
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/wheel/2.webp",
+  "status": 200,
+  "type": "image",
+  "size": 8882
+ },
+ {
+  "url": "https://neal.fun/_nuxt/e1a767d.js",
+  "status": 200,
+  "type": "script",
+  "size": 238719
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/wheel/4.webp",
+  "status": 200,
+  "type": "image",
+  "size": 6280
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/wheel/6.webp",
+  "status": 200,
+  "type": "image",
+  "size": 10562
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/wheel/8.webp",
+  "status": 200,
+  "type": "image",
+  "size": 9398
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/wheel/7.webp",
+  "status": 200,
+  "type": "image",
+  "size": 4502
+ },
+ {
+  "url": "https://neal.fun/_nuxt/fonts/Roboto-Medium.3ac5d40.woff2",
+  "status": 200,
+  "type": "font",
+  "size": 64732
+ },
+ {
+  "url": "https://neal.fun/_nuxt/e57b6e0.js",
+  "status": 200,
+  "type": "script",
+  "size": 310287
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/wheel/back.webp",
+  "status": 200,
+  "type": "image",
+  "size": 6118
+ },
+ {
+  "url": "https://neal.fun/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5361c154e684bfb",
+  "status": 302,
+  "type": "script",
+  "size": 0
+ },
+ {
+  "url": "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4556406968269041",
+  "status": 200
+ },
+ {
+  "url": "https://neal.fun/api/cursor-camp/schedule",
+  "status": 200,
+  "type": "fetch",
+  "size": 622
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/manifest.json",
+  "status": 200,
+  "type": "fetch",
+  "size": 1306
+ },
+ {
+  "url": "https://neal.fun/_nuxt/e37d52d.js",
+  "status": 200,
+  "type": "script",
+  "size": 194265
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/party-hat-1.webp",
+  "status": 200,
+  "type": "image",
+  "size": 10258
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/party-hat-2.webp",
+  "status": 200,
+  "type": "image",
+  "size": 11150
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/bridges/bridge-2.png",
+  "status": 200,
+  "type": "image",
+  "size": 52561
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/soccer-ball.webp",
+  "status": 200,
+  "type": "image",
+  "size": 6412
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/volleyball.webp",
+  "status": 200,
+  "type": "image",
+  "size": 10014
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/volleyball-net.webp",
+  "status": 200,
+  "type": "image",
+  "size": 16858
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/tether-ball.webp",
+  "status": 200,
+  "type": "image",
+  "size": 2822
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/garden/tomato-2.webp",
+  "status": 200,
+  "type": "image",
+  "size": 14382
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/garden/cabbage-4.webp",
+  "status": 200,
+  "type": "image",
+  "size": 13146
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/bridges/bridge-1.png",
+  "status": 200,
+  "type": "image",
+  "size": 46569
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/tether-pole.webp",
+  "status": 200,
+  "type": "image",
+  "size": 692
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/bridges/bridge-3.png",
+  "status": 200,
+  "type": "image",
+  "size": 18437
+ },
+ {
+  "url": "https://neal.fun/cdn-cgi/challenge-platform/h/g/scripts/jsd/c787ce48cf6b/main.js?ray=a5361c154e684bfb",
+  "status": 200,
+  "type": "script",
+  "size": 44192
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/floatie.webp",
+  "status": 200,
+  "type": "image",
+  "size": 8760
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/garden/cabbage-1.webp",
+  "status": 200,
+  "type": "image",
+  "size": 12002
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/garden/cabbage-2.webp",
+  "status": 200,
+  "type": "image",
+  "size": 11788
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/garden/cabbage-3.webp",
+  "status": 200,
+  "type": "image",
+  "size": 11864
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/garden/tomato-3.webp",
+  "status": 200,
+  "type": "image",
+  "size": 14128
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/garden/tomato-4.webp",
+  "status": 200,
+  "type": "image",
+  "size": 13330
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/orange.webp",
+  "status": 200,
+  "type": "image",
+  "size": 6800
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/watch.webp",
+  "status": 200,
+  "type": "image",
+  "size": 10630
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/ring.webp",
+  "status": 200,
+  "type": "image",
+  "size": 10986
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/cursor.webp",
+  "status": 200,
+  "type": "image",
+  "size": 1424
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/pointer.webp",
+  "status": 200,
+  "type": "image",
+  "size": 2250
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/pink-floatie.webp",
+  "status": 200,
+  "type": "image",
+  "size": 5780
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/marshmallow.webp",
+  "status": 200,
+  "type": "image",
+  "size": 1298
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/metal-detector.webp",
+  "status": 200,
+  "type": "image",
+  "size": 4738
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/stick.webp",
+  "status": 200,
+  "type": "image",
+  "size": 3576
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/chilli.webp",
+  "status": 200,
+  "type": "image",
+  "size": 8028
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/flashlight.webp",
+  "status": 200,
+  "type": "image",
+  "size": 20126
+ },
+ {
+  "url": "https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202610270101/show_ads_impl_fy2021.js?bust=122881932",
+  "status": 200
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/default-water.png",
+  "status": 200,
+  "type": "image",
+  "size": 182223
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/bottle-cap.webp",
+  "status": 200,
+  "type": "image",
+  "size": 10020
+ },
+ {
+  "url": "https://plausible.neal.fun/js/script.pageview-props.js",
+  "status": 200
+ },
+ {
+  "url": "https://googleads.g.doubleclick.net/pagead/html/r20261028/r20190131/zrt_lookup_fy2021.html",
+  "status": 200
+ },
+ {
+  "url": "https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-4556406968269041&output=html&adk=1812271804&adf=3025194257&abgtt=6&lmt=1793485884&plaf=1%3A2%2C7%3A2&plat=1%3A128%2C2%3A128%2C3%3A128%2C4%3A128%2C9%3A32776%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32%2C43%3A32%2C44%3A32&format=0x0&url=https%3A%2F%2Fneal.fun%2Fcursor-camp%2F&pra=5&aiof=14&asro=0&aimartd=4&aieuf=1&aicrs=1&uach=WyJXaW5kb3dzIiwiMTkuMC4wIiwieDg2IiwiIiwiMTU2LjAuODA3OC43NCIsbnVsbCwwLG51bGwsIjY0IixbWyJOb3Q6QS1CcmFuZCIsIjguMC4wLjAiXSxbIkNocm9taXVtIiwiMTU2LjAuODA3OC43NCJdLFsiR29vZ2xlIENocm9tZSIsIjE1Ni4wLjgwNzguNzQiXV0sMF0.&dt=1793485884298&bpp=3&bdt=557&idt=282&shv=r20261028&mjsv=m202610270101&ptt=9&saldr=aa&abxe=1&cookie_enabled=1&eoidce=1&nras=1&correlator=6898442258389&frm=20&pv=2&u_tz=330&u_his=2&u_h=800&u_w=1280&u_ah=800&u_aw=1280&u_cd=24&u_sd=1&dmc=8&adx=-12245933&ady=-12245933&biw=1280&bih=800&scr_x=0&scr_y=0&eid=95404667%2C95405492%2C95405931%2C95407882%2C95408372%2C95408709%2C95405501%2C95407148%2C122881932&oid=2&pvsid=5616010041219692&tmod=1398161154&uas=3&nvt=1&fsapi=1&fc=1920&brdim=10%2C10%2C10%2C10%2C1280%2C0%2C1296%2C738%2C1280%2C800&vis=1&rsz=%7C%7Cs%7C&abl=NS&fu=32768&bc=31&bz=1.01&pgls=CAs.&ifi=1&uci=a!1&fsb=1&dtd=306",
+  "status": 200
+ },
+ {
+  "url": "blob:https://neal.fun/bca2accd-0744-477f-81a6-d3737d87ccbb",
+  "status": 200
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/party-hat-3.webp",
+  "status": 200,
+  "type": "image",
+  "size": 12632
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/objects/garden/tomato-1.webp",
+  "status": 200,
+  "type": "image",
+  "size": 13264
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/rive/2.47.1/webgl2_advanced.wasm",
+  "status": 200,
+  "type": "fetch",
+  "size": 2306195
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/us.webp",
+  "status": 200,
+  "type": "image",
+  "size": 1184
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/merry-go-round.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/seesaw.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/hottub.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/campfire.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/fountain.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/stage.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/windsock.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/lagoon.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/river.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/ocean.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/rocks.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/flags.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_4_2.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_8_2.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_6_2.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_4_3.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_6_3.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_3_3.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_7_2.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_7_3.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_8_5.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_8_4.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_8_6.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_3_2.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_7_2.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_8_2.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_3_3.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_5_3.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_8_3.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_3_4.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_4_4.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_5_4.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_6_4.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_7_4.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_3_5.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_4_5.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_5_5.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_7_5.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_8_5.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_4_6.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_5_6.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_6_6.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_7_6.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_8_6.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_8_4.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_3_6.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/top_6_3.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_3_2.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_7_4.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_5_4.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_3_4.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_4_4.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_6_6.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_6_4.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_3_5.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_8_3.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_4_5.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_5_5.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_5_2.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_6_5.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_7_5.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_3_6.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_5_6.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_4_6.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_7_6.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/tiles/default/base_5_3.webp",
+  "status": 200,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://cursor-camp.neal.fun/movies/1.mp4",
+  "status": 206
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/i/ca-pub-4556406968269041?href=https%3A%2F%2Fneal.fun%2Fcursor-camp&ers=2",
+  "status": 200
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/maps/default-water.png",
+  "status": 200,
+  "type": "image",
+  "size": 182223
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/rs.webp",
+  "status": 200,
+  "type": "image",
+  "size": 948
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/hats/miner.webp",
+  "status": 200,
+  "type": "image",
+  "size": 3802
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/ru.webp",
+  "status": 200,
+  "type": "image",
+  "size": 808
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/tr.webp",
+  "status": 200,
+  "type": "image",
+  "size": 748
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/se.webp",
+  "status": 200,
+  "type": "image",
+  "size": 954
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/hats/shorts.webp",
+  "status": 200,
+  "type": "image",
+  "size": 5336
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/gb.webp",
+  "status": 200,
+  "type": "image",
+  "size": 1412
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/mx.webp",
+  "status": 200,
+  "type": "image",
+  "size": 760
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/sounds/rocks.mp3",
+  "status": 200,
+  "type": "xhr",
+  "size": 25276
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/el/AGSKWxW0rhszO_YaUXPN0xs-Yaoj1bkGuAgC2K0TD8LyICmC_WRX2KMAGeXebEYvTHYjvt1wf9qP0f1Dkz805BhXkQsQm7mHbPlJ9q4kfnhpKJHwHKdu2LSxfDTCnDYi67K-XKfqpqoMzA==",
+  "status": 204
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/f/AGSKWxXj5Z06R_4kim3CYVuXgsmWJo9YUwOHlqIP_s_4Gq_rYKZanK3P0HMGTUosvc0UL0r-p2-MaNlCoYt-5yauAiWftnYJMdhiBTo6b1XDqDu8L9dPFo0NQlcCEp2-bsW_ZiNFwozvyA==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzkzNDg1ODg2LDE2MjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly9uZWFsLmZ1bi9jdXJzb3ItY2FtcC8iLG51bGwsW1s4LCJETHhqakFaMFVmcyJdLFs5LCJlbi1VUyJdLFsxOCwiW1tbbnVsbCwxNjAzLG51bGwsMV1dXSJdLFszNSwiMTc5MzQ4NTg4NiJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+  "status": 200
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/el/AGSKWxW0rhszO_YaUXPN0xs-Yaoj1bkGuAgC2K0TD8LyICmC_WRX2KMAGeXebEYvTHYjvt1wf9qP0f1Dkz805BhXkQsQm7mHbPlJ9q4kfnhpKJHwHKdu2LSxfDTCnDYi67K-XKfqpqoMzA==",
+  "status": 204
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/el/AGSKWxW0rhszO_YaUXPN0xs-Yaoj1bkGuAgC2K0TD8LyICmC_WRX2KMAGeXebEYvTHYjvt1wf9qP0f1Dkz805BhXkQsQm7mHbPlJ9q4kfnhpKJHwHKdu2LSxfDTCnDYi67K-XKfqpqoMzA==",
+  "status": 204
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVwKSbj2QPy-iZ26INWiX5gZ1rI9LBjOLRAd1kMCt-zRQ3OmDI_E7QFX7x3yDshygOFMBWCrtLFvwHEcmgvGEGTZjhTA36Jmn41l5s6CPHYOhwcYpaw5nKlF0aHNe33k9_CUG-9VQ==",
+  "status": 204
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/f/AGSKWxUxCdr_QeH0ojKY0Y7pGT3z9RBT7DEaQKizjTlexbc900a0R1MQy_NEhhbl1aT_C9LL36J7YCZXXxGdBVf8sc1Eo_71E9gAzIlfVWTuQkuIpfyuYHZ0zzSiUTur6sf8Tn7vLDEx4A==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzkzNDg1ODg2LDMxODAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOV0sbnVsbCwyLG51bGwsImVuIl0sImh0dHBzOi8vbmVhbC5mdW4vY3Vyc29yLWNhbXAvIixudWxsLFtbOCwiREx4ampBWjBVZnMiXSxbOSwiZW4tVVMiXSxbMTgsIltbW251bGwsMTYwMyxudWxsLDFdXV0iXSxbMzUsIjE3OTM0ODU4ODYiXSxbMTksIjIiXSxbMTcsIlswXSJdLFsyNCwiIl0sWzI5LCJmYWxzZSJdXV0",
+  "status": 200
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/hats/party-3.webp",
+  "status": 200,
+  "type": "image",
+  "size": 7328
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/ua.webp",
+  "status": 200,
+  "type": "image",
+  "size": 790
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/hats/sunglasses.webp",
+  "status": 200,
+  "type": "image",
+  "size": 3456
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/it.webp",
+  "status": 200,
+  "type": "image",
+  "size": 666
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/in.webp",
+  "status": 200,
+  "type": "image",
+  "size": 846
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/sounds/fountain.mp3",
+  "status": 200,
+  "type": "xhr",
+  "size": 908785
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/ca.webp",
+  "status": 200,
+  "type": "image",
+  "size": 888
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/hats/party-1.webp",
+  "status": 200,
+  "type": "image",
+  "size": 6092
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/concert/2.mp3",
+  "status": 206,
+  "type": "media",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/favicons/cursor-camp.png",
+  "status": 200,
+  "type": "other",
+  "size": 20492
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/hats/sailor.webp",
+  "status": 200,
+  "type": "image",
+  "size": 3236
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/vn.webp",
+  "status": 200,
+  "type": "image",
+  "size": 702
+ },
+ {
+  "url": "https://neal.fun/favicons/cursor-camp.png",
+  "status": 200,
+  "type": "other",
+  "size": 20492
+ },
+ {
+  "url": "https://cursor-camp.neal.fun/movies/1.mp4",
+  "status": 206
+ },
+ {
+  "url": "https://ep1.adtrafficquality.google/getconfig/sodar?sv=200&tid=gda&tv=r20261028&st=env&sjk=5616010041219692",
+  "status": 200
+ },
+ {
+  "url": "https://ep2.adtrafficquality.google/sodar/sodar2.js",
+  "status": 200
+ },
+ {
+  "url": "https://ep2.adtrafficquality.google/sodar/sodar2/257/runner.html",
+  "status": 200
+ },
+ {
+  "url": "https://www.google.com/recaptcha/api2/aframe",
+  "status": 200
+ },
+ {
+  "url": "https://pagead2.googlesyndication.com/pagead/show_companion_ad.js?fcd=true",
+  "status": 200
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/concert/2.mp3",
+  "status": 206,
+  "type": "media",
+  "size": 256686
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/f/AGSKWxXM8crDBDIMOtI_0ZdKCd_bAFuyQOvXo0F6Bo00q_1tWydJpweAOfUDXcGe1vyw96BiBcmM6JnhBPQVAYIsvGKF-ZOzbBDAqqy1cYsdeAnCGUInGYS__tW6yHW85sxCpZ4kL2QMicV5ER_yw_-3apIMJgSdfEtRtMqmg4CiE2Xo4TIZULlAY8MykSiV/_/ads-1./530x60_/adservices./adslug_2.0]",
+  "status": 200
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/el/AGSKWxW0rhszO_YaUXPN0xs-Yaoj1bkGuAgC2K0TD8LyICmC_WRX2KMAGeXebEYvTHYjvt1wf9qP0f1Dkz805BhXkQsQm7mHbPlJ9q4kfnhpKJHwHKdu2LSxfDTCnDYi67K-XKfqpqoMzA==",
+  "status": 204
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/el/AGSKWxW0rhszO_YaUXPN0xs-Yaoj1bkGuAgC2K0TD8LyICmC_WRX2KMAGeXebEYvTHYjvt1wf9qP0f1Dkz805BhXkQsQm7mHbPlJ9q4kfnhpKJHwHKdu2LSxfDTCnDYi67K-XKfqpqoMzA==",
+  "status": 204
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/f/AGSKWxWsV5AjdN8P_SdESWJJaQpN6XYguJPoRsyVdeCs1LBnDa_IA2u7vrOnpFedWPAYWq8AWr591QvAtPkWyvq_NslDPE5sZtBPtBPjiAQXKADTX85ujI83oxICbckZZrULVOTsXPs6FA==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNzkzNDg1ODg3LDQ2OTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsOSw2XSxudWxsLDIsbnVsbCwiZW4iLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly9uZWFsLmZ1bi9jdXJzb3ItY2FtcC8iLG51bGwsW1s4LCJETHhqakFaMFVmcyJdLFs5LCJlbi1VUyJdLFsxOCwiW1tbbnVsbCwxNjAzLG51bGwsMV1dXSJdLFszNSwiMTc5MzQ4NTg4NiJdLFsxOSwiMiJdLFsxNywiWzBdIl0sWzI0LCIiXSxbMjksImZhbHNlIl1dXQ",
+  "status": 200
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/el/AGSKWxW0rhszO_YaUXPN0xs-Yaoj1bkGuAgC2K0TD8LyICmC_WRX2KMAGeXebEYvTHYjvt1wf9qP0f1Dkz805BhXkQsQm7mHbPlJ9q4kfnhpKJHwHKdu2LSxfDTCnDYi67K-XKfqpqoMzA==",
+  "status": 204
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/el/AGSKWxW0rhszO_YaUXPN0xs-Yaoj1bkGuAgC2K0TD8LyICmC_WRX2KMAGeXebEYvTHYjvt1wf9qP0f1Dkz805BhXkQsQm7mHbPlJ9q4kfnhpKJHwHKdu2LSxfDTCnDYi67K-XKfqpqoMzA==",
+  "status": 204
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/el/AGSKWxVkLhnE5CTkKCeCqfxYr1kF23_WnqZGbvZxa1MxP4O7N3si9ZSq6SRYjsziYQUp-i6f6gJfMgRWsJ0ppC1JfO-JHWE3c5Y8O6pu92ZoOdObQJH7qWAH-IW885YO1Wwy41v0zbTB6Q==",
+  "status": 204
+ },
+ {
+  "url": "https://pagead2.googlesyndication.com/bg/GCwe4e_2OyQpTB1FoCo07UjtXr8ioJlxTvM6dIxeHeo.js",
+  "status": 200
+ },
+ {
+  "url": "https://pagead2.googlesyndication.com/pagead/sodar?id=sodar2&v=257&li=gda_r20261028&jk=5616010041219692&rc=",
+  "status": 204
+ },
+ {
+  "url": "https://fundingchoicesmessages.google.com/el/AGSKWxW0rhszO_YaUXPN0xs-Yaoj1bkGuAgC2K0TD8LyICmC_WRX2KMAGeXebEYvTHYjvt1wf9qP0f1Dkz805BhXkQsQm7mHbPlJ9q4kfnhpKJHwHKdu2LSxfDTCnDYi67K-XKfqpqoMzA==",
+  "status": 204
+ },
+ {
+  "url": "https://ep2.adtrafficquality.google/generate_204?WDXXvg",
+  "status": 204
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/sounds/ambient/forest.mp3",
+  "status": 206,
+  "type": "media",
+  "size": 1409098
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/sounds/ambient/walking.mp3",
+  "status": 206,
+  "type": "media",
+  "size": 1670100
+ },
+ {
+  "url": "https://ep1.adtrafficquality.google/pagead/sodar?id=sodar2&v=257&t=2&li=gda_r20261028&jk=5616010041219692&bg=!Xl2lXT_NAAYraIq0C2g7AEcBe5WfOJG0O0vSoKtmobfE4Ql_y0DgFw6lN5EepWtOpWctFprzbvG0YIRbz-cb-m71atYvsZk23cdRernylZdaRcg2wRCqqAIAAAMGUgAAAA1oAQd-ADcYEPkRyayxiif__6zSUwiZ4FPsMUNBFDBhoChu31f3OSSTAf5EWM08Kr0Xo1HFT-1uDS1OdUulCgAqxbl-bDDZLci5en6mcpaCAIig2QcPRL1BplQYS2PyaOtyR-BC59lgMZ0wmQJ5pXL2kPmBEL5QT-qoSY59NvC7M_kEaIAClsBUB7LNRGKhTSg0DlDzBRLkofSa9zUcxeyOGEKzYz0sFXV7ZxRQiWfU3PfEB0xYMH7xb6qnhGbTRj1EU--iP5zuLPhlNMGOAKlNSu2tZqdDyvtk-sePhxP8OjjzI264ZNoEQQtctBMli0YaKcJ9_pU5CDEqciJ6TE9R1MzEri6l61wgtg3A1ngYlRW9AI_aNfawV8ll0J8Vun6_X07k-oNjb5GGgWxzTrdKNrl7mKYdEYnFJydVuJrVfiTRTlcf4a7XRYyII1jCcPP4azWChQ4F_qSMEasboyR1RVP8dPeaDCxjxlqmzG01ZdtJjuNk56ucXxxC538kyrViD7iXQbCnXHMN_HKnBIgmBllQPux3xKtBoY_vZmgYBxKv-Ah3lIgNhmXJqwtWqfd2npxET6ajehMeMpTwaO48lERYhCIFyhVv8nzEyvjZAsM12snY2tQbtWMwCSFjySv_-ywJank20_fONTi2062D2_s4dP9cpHZ4K1467-qHrJU15rm1p9es5muqsJNe9JfJ-4fkEaB_hhyJLBbX_lmB81yP7Yy7dRhVhtNDK6gEFI-vcuoiZrlCcBFrnf7jVZGZjhFmD-PP9qZtfPEV2G8MY0LhCyfcRHTBpqfW2XVjoBQWtr87xeNzuuH7zQ-j34JLtAYLYpngmNCck-OAMkc2BK740pUk3FAnO8-XlWuaTcDbNCf-pAmxm-533weijWmojaHmN_Kul379af5AyGRNrVujlrNQyrGRT_q1k1kU1YYhS0bVVW-TynT6ms0IsVkLBijJI0tt1dvbOJwuIwAaXjePBLX_",
+  "status": 204
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/hats/explorer.webp",
+  "status": 200,
+  "type": "image",
+  "size": 3220
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/id.webp",
+  "status": 200,
+  "type": "image",
+  "size": 704
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/nz.webp",
+  "status": 200,
+  "type": "image",
+  "size": 928
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/fr.webp",
+  "status": 200,
+  "type": "image",
+  "size": 650
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/ma.webp",
+  "status": 200,
+  "type": "image",
+  "size": 634
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/sounds/waterfall.mp3",
+  "status": 200,
+  "type": "xhr",
+  "size": 278514
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/es.webp",
+  "status": 200,
+  "type": "image",
+  "size": 832
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/hats/wavy.webp",
+  "status": 200,
+  "type": "image",
+  "size": 4550
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/br.webp",
+  "status": 200,
+  "type": "image",
+  "size": 982
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/hats/snorkel.webp",
+  "status": 200,
+  "type": "image",
+  "size": 5572
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/concert/3.mp3",
+  "status": 206,
+  "type": "media",
+  "size": 2809421
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/au.webp",
+  "status": 200,
+  "type": "image",
+  "size": 1008
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/watering.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/animations/watering.riv",
+  "status": 403,
+  "type": "fetch",
+  "size": 0
+ },
+ {
+  "url": "https://neal.fun/cursor-camp/optimized/flags/be.webp",
+  "status": 200,
+  "type": "image",
+  "size": 644
+ }
+]

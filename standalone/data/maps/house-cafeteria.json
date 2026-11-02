@@ -1,0 +1,83 @@
+{
+ "id": "house-cafeteria",
+ "elements": [
+  {
+   "type": "cake",
+   "x": 1290,
+   "y": 210,
+   "rivX": 1300,
+   "rivY": 90,
+   "rivWidth": 260,
+   "rivHeight": 260,
+   "index": 0
+  },
+  {
+   "type": "hat",
+   "hatType": "chef",
+   "x": 467,
+   "y": 619,
+   "size": 40
+  },
+  {
+   "type": "door",
+   "x": 595,
+   "y": 660,
+   "width": 135,
+   "height": 235,
+   "to": "house-main",
+   "toX": 470,
+   "toY": 465
+  },
+  {
+   "type": "door",
+   "x": 90,
+   "y": 700,
+   "width": 180,
+   "height": 350,
+   "to": "default",
+   "toX": 2285,
+   "toY": 2180
+  },
+  {
+   "type": "piano",
+   "x": 1179,
+   "y": 390,
+   "width": 185,
+   "height": 40,
+   "rotation": 18,
+   "spriteX": 1230,
+   "spriteY": 240,
+   "spriteWidth": 350
+  },
+  {
+   "type": "candle",
+   "x": 1310,
+   "y": 500,
+   "width": 90,
+   "sortY": 300,
+   "candlePoints": [
+    {
+     "x": 1289,
+     "y": 638
+    },
+    {
+     "x": 1309,
+     "y": 649
+    },
+    {
+     "x": 1332,
+     "y": 636
+    }
+   ]
+  },
+  {
+   "type": "ambientAudio",
+   "sounds": [
+    {
+     "sound": "home",
+     "volume": 0.3
+    }
+   ]
+  }
+ ]
+}

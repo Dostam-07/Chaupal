@@ -1,0 +1,30 @@
+<!doctype html><meta charset="utf-8"><body><pre id="out">scanning…</pre>
+<script>
+(async () => {
+  const m = await fetch("/assets/maps/tiles/default/manifest.json").then(r => r.json());
+  const rows = Object.keys(m.layers.base);
+  const tiles = [];
+  for (const y of rows) {
+    for (const x of Object.keys(m.layers.base[y])) {
+      const img = new Image();
+      await new Promise(res => { img.onload = res; img.onerror = res; img.src = "/assets/maps/tiles/default/base_" + x + "_" + y + ".webp"; });
+      if (!img.naturalWidth) continue;
+      const cv = document.createElement("canvas"); cv.width = img.naturalWidth; cv.height = img.naturalHeight;
+      const ctx = cv.getContext("2d", { willReadFrequently: true });
+      ctx.drawImage(img, 0, 0);
+      let brown = 0, dark = 0;
+      const d = ctx.getImageData(0, 0, cv.width, cv.height).data;
+      for (let i = 0; i < d.length; i += 4) {
+        const r = d[i], g = d[i + 1], bl = d[i + 2];
+        if (r > 110 && g > 50 && g < 120 && bl < 90 && r > g) brown++;
+        if (r < 75 && g < 75 && bl < 75) dark++;
+      }
+      const n = cv.width * cv.height;
+      tiles.push({ t: "base_" + x + "_" + y, brown: brown / n, dark: dark / n });
+    }
+  }
+  tiles.sort((a, b) => (b.brown + b.dark * 3) - (a.brown + a.dark * 3));
+  document.getElementById("out").textContent = tiles.slice(0, 16).map(t => t.t + " brown=" + (t.brown * 100).toFixed(1) + "% dark=" + (t.dark * 100).toFixed(1) + "%").join("\n");
+  window.__res = tiles.slice(0, 16).map(t => t.t + "|" + t.brown.toFixed(3) + "|" + t.dark.toFixed(3));
+})();
+</script></body></html>

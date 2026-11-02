@@ -1,0 +1,59 @@
+{
+ "id": "house-bedroom",
+ "elements": [
+  {
+   "type": "door",
+   "x": 939,
+   "y": 665,
+   "width": 130,
+   "height": 240,
+   "to": "house-main",
+   "toX": 102,
+   "toY": 317
+  },
+  {
+   "type": "fan",
+   "x": 875,
+   "y": 540,
+   "size": 100,
+   "rivX": 880,
+   "rivY": 445,
+   "rivWidth": 155,
+   "rivSpeed": 1.05,
+   "soundX": 870,
+   "soundY": 472
+  },
+  {
+   "type": "hat",
+   "hatType": "normal",
+   "x": 119,
+   "y": 715,
+   "size": 40
+  },
+  {
+   "type": "clickArea",
+   "x": 441,
+   "y": 660,
+   "width": 70,
+   "height": 70,
+   "action": "sound:guitar"
+  },
+  {
+   "type": "clickArea",
+   "x": 1456,
+   "y": 686,
+   "width": 50,
+   "height": 50,
+   "action": "sound:eat"
+  },
+  {
+   "type": "ambientAudio",
+   "sounds": [
+    {
+     "sound": "home",
+     "volume": 0.3
+    }
+   ]
+  }
+ ]
+}

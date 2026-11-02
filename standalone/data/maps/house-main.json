@@ -1,0 +1,148 @@
+{
+ "id": "house-main",
+ "elements": [
+  {
+   "type": "door",
+   "x": 771,
+   "y": 586,
+   "width": 180,
+   "height": 170,
+   "to": "default",
+   "toX": 2560,
+   "toY": 2335
+  },
+  {
+   "type": "door",
+   "x": 30,
+   "y": 467,
+   "width": 145,
+   "height": 300,
+   "to": "house-bedroom",
+   "toX": 990,
+   "toY": 545
+  },
+  {
+   "type": "door",
+   "x": 435,
+   "y": 540,
+   "width": 70,
+   "height": 150,
+   "to": "house-cafeteria",
+   "toX": 640,
+   "toY": 530
+  },
+  {
+   "type": "door",
+   "x": 1550,
+   "y": 490,
+   "width": 140,
+   "height": 320,
+   "to": "house-trophey",
+   "toX": 845,
+   "toY": 560
+  },
+  {
+   "type": "cat",
+   "x": 381,
+   "y": 339,
+   "size": 100
+  },
+  {
+   "type": "riveObject",
+   "src": "cat.riv",
+   "x": 366,
+   "y": 285,
+   "width": 240,
+   "speed": 2
+  },
+  {
+   "type": "riveObject",
+   "src": "clock.riv",
+   "x": 560,
+   "y": 385,
+   "width": 100,
+   "speed": 1.5
+  },
+  {
+   "type": "coffee",
+   "x": 1147,
+   "y": 301
+  },
+  {
+   "type": "chair",
+   "x": 905,
+   "y": 425,
+   "width": 140,
+   "height": 140,
+   "index": 0
+  },
+  {
+   "type": "chandelier",
+   "x": 745,
+   "y": 964,
+   "width": 230
+  },
+  {
+   "type": "clickArea",
+   "x": 504,
+   "y": 300,
+   "width": 52,
+   "height": 52,
+   "action": "badges"
+  },
+  {
+   "type": "clickArea",
+   "x": 237,
+   "y": 337,
+   "width": 50,
+   "height": 50,
+   "action": "sound:pillow"
+  },
+  {
+   "type": "baguette",
+   "x": 1200,
+   "y": 273,
+   "rivX": 1190,
+   "rivY": 195,
+   "rivWidth": 175,
+   "rivHeight": 155,
+   "index": 0
+  },
+  {
+   "type": "lockedDoor",
+   "x": 1240,
+   "y": 349,
+   "width": 70,
+   "height": 200
+  },
+  {
+   "type": "hat",
+   "hatType": "newspaper",
+   "x": 253,
+   "y": 418,
+   "size": 40
+  },
+  {
+   "type": "spatialAudio",
+   "sounds": [
+    {
+     "x": 554,
+     "y": 483,
+     "sound": "grandfather-clock",
+     "radius": 150,
+     "falloff": 400,
+     "maxVolume": 0.25
+    }
+   ]
+  },
+  {
+   "type": "ambientAudio",
+   "sounds": [
+    {
+     "sound": "home",
+     "volume": 0.3
+    }
+   ]
+  }
+ ]
+}

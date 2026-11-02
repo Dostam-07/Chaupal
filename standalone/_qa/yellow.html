@@ -1,0 +1,30 @@
+<!doctype html><meta charset="utf-8"><body><pre id="o"></pre>
+<script>
+(async () => {
+  const m = await fetch("/assets/maps/tiles/default/manifest.json").then(r => r.json());
+  const out = [];
+  for (const layer of ["base", "top"]) {
+    for (const y of Object.keys(m.layers[layer])) {
+      for (const x of Object.keys(m.layers[layer][y])) {
+        const img = new Image();
+        await new Promise(res => { img.onload = res; img.onerror = res; img.src = "/assets/maps/tiles/default/" + layer + "_" + x + "_" + y + ".webp"; });
+        if (!img.naturalWidth) { out.push(layer + "_" + x + "_" + y + "|missing"); continue; }
+        const cv = document.createElement("canvas"); cv.width = img.naturalWidth; cv.height = img.naturalHeight;
+        const ctx = cv.getContext("2d", { willReadFrequently: true });
+        ctx.drawImage(img, 0, 0);
+        const d = ctx.getImageData(0, 0, cv.width, cv.height).data;
+        let yellow = 0;
+        const n = cv.width * cv.height;
+        for (let i = 0; i < d.length; i += 4) {
+          const r = d[i], g = d[i + 1], b = d[i + 2];
+          if (r > 170 && g > 120 && b < 140 && r > b && g > r * 0.55) yellow++;
+        }
+        out.push(layer + "_" + x + "_" + y + "|" + (yellow / n).toFixed(3));
+      }
+    }
+  }
+  out.sort((a, b) => { const pa = parseFloat(a.split("|")[1] || "0"), pb = parseFloat(b.split("|")[1] || "0"); return pb - pa; });
+  document.getElementById("o").textContent = out.slice(0, 14).join("\n");
+  window.__res = out.slice(0, 14);
+})();
+</script></body></html>
