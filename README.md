@@ -249,5 +249,4 @@ The ugly details — bundle structure, socket protocol, element inventory, every
 Campground art, audio and the original layout come from a third-party illustrated build captured for study; they are retained here for personal, non-commercial use and are **not** cleared for redistribution. Village Chaupal, the Pathshala, their characters, dialogue, panels and UI are original to this project.
 
 <sub>**0 build steps · 12 maps · 26 doors · 6 films · 4 women under one tree.**</sub>
-#   C h a u p a l  
- 
+#
